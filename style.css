@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+:root {
+    /* card colors */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    /* btn color */
+    --btn-color: #313E59;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.card-container {
+    display: flex;
+    width: 700px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin: 95px 10px;
+    border-radius: 20px;
+    box-shadow: 1px 5px 10px #e2ebfa;
+}
+
+/* ================= card one ================== */
+.card-main {
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+    background: linear-gradient(180deg, var(--Light-slate-blue), var(--Light-royal-blue));
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.card-main h2 {
+    color: #ffffff89;
+    margin: 40px;
+}
+
+.card-main .circle {
+    width: 190px;
+    height: 190px;
+    background: linear-gradient(180deg, var(--Violet-blue), var(--Persian-blue));
+    border-radius: 50%;
+    margin: auto;
+    align-items: center;
+}
+
+.card-main .num1 {
+    font-size: 80px;
+    font-weight: bold;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.card-main .num2 {
+    font-size: 20px;
+    margin-top: -15px;
+    color: #ffffff89;
+}
+
+.card-main h1 {
+    margin-top: 20px;
+    color: #fff;
+}
+
+.card-main p {
+    font-size: 20px;
+    margin: 15px 39px;
+    color: #ffffff89;
+}
+
+/* =============== card two ================== */
+
+.card-second {
+    width: 50%;
+    height: 96%;
+    padding: 30px;
+}
+
+.card-second .item {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background: var(--category-color);
+    color: var(--txt-color);
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+}
+
+#icons {
+    display: flex;
+}
+
+#icons img {
+    margin-right: 10px;
+}
+
+
+.card-second .item p {
+    color: rgb(17, 16, 16);
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+#span {
+    display: flex;
+    color: rgb(144, 143, 143);
+}
+
+.card-second button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 25px;
+    background: var(--btn-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* ============= footer =================*/
+footer .attribution {
+    text-align: center;
+    text-decoration: none;
+}
+
+footer .attribution a {
+    text-decoration: none;
+    color: var(--Violet-blue);
+}
+
+
+/* ========== reponsive ==================*/
+@media (max-width: 600px) {
+    .container {
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .card-container {
+        display: block;
+        width: 90%;
+ 
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .card-main {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .card-second {
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer .attribution {
+        margin-top: 400px;
+        align-items: end;
+    }
+}
